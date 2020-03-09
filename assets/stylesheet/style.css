@@ -1,0 +1,224 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* General */
+*{
+    box-sizing: border-box;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.4;
+}
+
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+a{
+	text-decoration: none;
+}
+
+.btn{
+	background: transparent;
+	padding: 20px 46px;
+	border-radius: 8px;
+	font-size: 18px;
+}
+
+.col-1-3{
+	float: left;
+	width: 30%;
+	margin: 1.5%;
+}
+
+
+/* Clearfix */
+.clearfix::after,
+.clearfix::before{
+	content: "";
+	display: table;
+}
+
+.clearfix::after{
+	clear: both;
+}
+
+
+
+/* Header */
+.header{
+	padding: 100px 0 20px;
+	position: absolute;
+	width: 100%;
+	line-height: 39px;
+}
+
+.logo{
+	float: left;
+	color: whitesmoke;
+}
+
+.selected{
+	border: 2px solid wheat;
+	border-radius: 5px;
+	padding: 12px 24px;
+}
+
+.logo h2{
+	font-size: 28px;
+}
+
+.nav-menu{
+	float: right;
+}
+
+.nav-menu strong{
+	font-weight: 900;
+}
+
+.nav-menu a{
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-left: 25px;
+	color: white;
+}
+
+.hero{
+	background: url("../media/header-bg.jpg");
+	background-size: cover ;
+	background-repeat: no-repeat;
+	height: 100vh;
+	color: whitesmoke;
+	text-align: center;
+	padding: 250px 0;
+}
+
+.hero-heading{
+	font-size: 64px;
+	font-weight: bold;
+}
+
+.hero-subheading{
+	font-size: 32px;
+	font-weight: 200;
+	margin-bottom: 120px;
+}
+
+.btn-hero{
+	color: white;
+	border: 2px solid white;
+}
+
+
+/* Primary Section */
+.primary{
+	text-align: center;
+	padding: 100px 0;
+	color: rgb(65, 61, 61);
+}
+
+.primary-heading{
+	font-size: 48px;
+}
+
+.primary-subheading{
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+
+.primary-img img{
+	width: 80px;
+	height: 80px;
+	object-fit: cover;
+	opacity: 0.7;
+}
+
+.btn-primary{
+	color: black;
+	border: 2px solid black;
+}
+
+.primary-col-content{
+	margin: 25px 0;
+}
+
+/* Footer Section */
+.footer{
+	background: #111111;
+	padding: 100px 0;
+	text-align: center;
+	color: rgb(199, 195, 195);
+}
+
+.footer-header{
+	font-size: 48px;
+}
+
+.footer-subheading{
+	font-size: 24px;
+	color: rgb(167, 167, 167);
+}
+
+.footer-content{
+	margin: 20px 0 40px;
+	
+}
+
+.footer small{
+	display: inline-block;
+	padding: 150px 0 15px;
+	color: rgb(155, 155, 155);
+}
+
+.templated{
+	text-decoration: underline;
+	color: whitesmoke;
+}
